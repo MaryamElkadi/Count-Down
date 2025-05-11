@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(233, 129, 151, 0.4), rgba(255, 105, 180, 0.4)), url(../img/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Sidebar Menu styling */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease; /* Smooth transition */
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* When the menu is active and visible */
+.menu.active {
+    left: 0; /* Show the menu by shifting it to the left */
+}
+/* Accordion section */
+.accordion {
+  width: 50%;
+text-align: center;
+  margin: 120px auto;
+  color: white;
+  background-color: #8d8383;
+  border-radius: 5px;
+  overflow: hidden;
+ 
+}
+
+/* Hide radios */
+.accordion-item input {
+  display: none;
+}
+
+/* Accordion header */
+.accordion-header {
+  display: block;
+  background: rgba(214, 46, 51 , 0.6);
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: rgba(214, 46, 51 , 0.6);
+}
+
+/* Accordion body */
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 20px;
+  background: #ccc;
+  color: black;
+}
+
+/* Show when selected */
+.accordion-item input:checked + .accordion-header + .accordion-body {
+  max-height: 300px;
+  padding: 15px 20px;
+}.count {
+    width: 100%;
+    height: 25%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)), url(../img/invitation-2508607__340.jpg);
+}
+
+.count div {
+    margin-block: 60px;
+    padding: 50px;
+    padding-inline: 100px;
+    border: 2px solid white; 
+}
+
+/* Join Us Section Styling */
+.join-us {
+    margin-top: 100px;
+    background-color: #ffffff;
+    color: rgb(5, 5, 5);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    text-align: left;
+}
+
+.join-us-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.join-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.join-us p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.join-us h3 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.items {
+    margin-top: 20px;
+}
+
+.items i {
+    margin-right: 10px;
+}
+
+.items a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.items span {
+    color: rgb(0, 0, 0);
+}
+
+.social {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.social i {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s; 
+      border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.social i:hover {
+    background-color: #f49ac4; 
+    transform: scale(1.2); 
+    color: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+.form button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #f49ac4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #e04b6f;
+}
+.remaining-number {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
